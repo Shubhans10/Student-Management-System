@@ -1,0 +1,66 @@
+﻿@model Sprint2Mvc.Models.DisplayStudentDetails
+
+@{
+    ViewBag.Title = "DisplayStudentDetails_Faculty";
+}
+
+<h1>STUDENT DETAILS</h1>
+
+<div>
+    <label>FILTER BY :</label>
+    <select class="form-control" name="FILTER BY">
+        <optgroup>Select</optgroup>
+        <option>Student Id</option>
+        <option>College Id</option>
+    </select>
+    <br />
+    <br />
+    <button name="submit">SUBMIT</button>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CollegeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CollegeId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+   
+    @Html.ActionLink("Back to List", "Index")
+</p>

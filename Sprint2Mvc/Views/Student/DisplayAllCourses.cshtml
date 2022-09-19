@@ -1,0 +1,42 @@
+﻿@model Sprint2Mvc.Models.DisplayAllCourses
+
+@{
+    ViewBag.Title = "DisplayAllCourses";
+}
+
+<h2>ALL COURSES</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+     
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Duration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+
+    @Html.ActionLink("Back ", "StudentMainPage", "Student", null,new{ @class = "btn btn-primary" })
+</p>
